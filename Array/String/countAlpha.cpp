@@ -12,7 +12,7 @@ int countAl(string & s){
         }else if(ch>='a' & ch<='z'){
             consonant++;
 
-        }else if(ch>='0' && ch<=9){
+        }else if(ch>='0' && ch<='9'){
             digit++;
         }else{
             special++;

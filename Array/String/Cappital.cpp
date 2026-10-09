@@ -10,12 +10,13 @@ bool detectCaptial(string & s){
 if(capital==s.size()){
     return true;
 }
-if(capital==0){
+else if(capital==0){
     return true;
-}if(capital==1 && isupper(s[0])){
+}else if(capital==1 && isupper(s[0])){
     return true;
-}
+}else{
 return false;
+}
 }
 int main(){
     string s;cin>> s;

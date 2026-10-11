@@ -4,6 +4,7 @@ bool sorted(vector<int> &nums){
     for(int i=0;i<nums.size()-1;i++){
         if(nums[i]>nums[i+1]){
             return false;
+
         }
     }
     return true;
@@ -16,7 +17,12 @@ int main(){
     for (int i = 0; i < n; i++) {
         cin >> nums[i];
     }
-    int p=sorted(nums);
-    cout<<p;
+     if (sorted(nums)) {
+        cout << "Sorted";
+    } else {
+        cout << "Not Sorted";
+    }
+
+    
 
 }

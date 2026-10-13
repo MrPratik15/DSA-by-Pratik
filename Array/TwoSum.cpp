@@ -25,6 +25,6 @@ int main(){
     }
     vector <int> p=TwoSum(nums,target);
     for(int i=0;i<p.size();i++){
-        cout<<p[i];
+        cout<<p[i]<<" ";
     }
 }
